@@ -14,6 +14,8 @@
 		03CFDDA51BA917FD00ED3456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CFDDA41BA917FD00ED3456 /* Images.xcassets */; };
 		03CFDDA81BA917FD00ED3456 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CFDDA61BA917FD00ED3456 /* LaunchScreen.xib */; };
 		03CFDDB41BA917FD00ED3456 /* MclJsonSerializerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDDB31BA917FD00ED3456 /* MclJsonSerializerDemoTests.m */; };
+		03CFDDC21BA9186300ED3456 /* CLJsonObjectValueSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDDBF1BA9186300ED3456 /* CLJsonObjectValueSet.m */; };
+		03CFDDC31BA9186300ED3456 /* CLJsonSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDDC11BA9186300ED3456 /* CLJsonSerializer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		03CFDDAD1BA917FD00ED3456 /* MclJsonSerializerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MclJsonSerializerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CFDDB21BA917FD00ED3456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CFDDB31BA917FD00ED3456 /* MclJsonSerializerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MclJsonSerializerDemoTests.m; sourceTree = "<group>"; };
+		03CFDDBE1BA9186300ED3456 /* CLJsonObjectValueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLJsonObjectValueSet.h; sourceTree = "<group>"; };
+		03CFDDBF1BA9186300ED3456 /* CLJsonObjectValueSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLJsonObjectValueSet.m; sourceTree = "<group>"; };
+		03CFDDC01BA9186300ED3456 /* CLJsonSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLJsonSerializer.h; sourceTree = "<group>"; };
+		03CFDDC11BA9186300ED3456 /* CLJsonSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLJsonSerializer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		03CFDD961BA917FC00ED3456 /* MclJsonSerializerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				03CFDDBD1BA9186300ED3456 /* Lib */,
 				03CFDD9B1BA917FC00ED3456 /* AppDelegate.h */,
 				03CFDD9C1BA917FC00ED3456 /* AppDelegate.m */,
 				03CFDD9E1BA917FC00ED3456 /* ViewController.h */,
@@ -118,6 +125,17 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		03CFDDBD1BA9186300ED3456 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				03CFDDBE1BA9186300ED3456 /* CLJsonObjectValueSet.h */,
+				03CFDDBF1BA9186300ED3456 /* CLJsonObjectValueSet.m */,
+				03CFDDC01BA9186300ED3456 /* CLJsonSerializer.h */,
+				03CFDDC11BA9186300ED3456 /* CLJsonSerializer.m */,
+			);
+			path = Lib;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -221,7 +239,9 @@
 			files = (
 				03CFDDA01BA917FC00ED3456 /* ViewController.m in Sources */,
 				03CFDD9D1BA917FC00ED3456 /* AppDelegate.m in Sources */,
+				03CFDDC21BA9186300ED3456 /* CLJsonObjectValueSet.m in Sources */,
 				03CFDD9A1BA917FC00ED3456 /* main.m in Sources */,
+				03CFDDC31BA9186300ED3456 /* CLJsonSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

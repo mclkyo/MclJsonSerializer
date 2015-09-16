@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "CLJsonSerializer.h"
 
 @interface ViewController ()
+
+@end
+
+@implementation User
+
+@end
+
+@implementation Blog
 
 @end
 
@@ -17,6 +26,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableArray *lstType = [[NSMutableArray alloc]init];
+    [lstType addObject:@"科技"];
+    [lstType addObject:@"IT"];
+    
+    User *user1 = [[User alloc]init];
+    user1.Id = 1;
+    user1.Name = @"mcl";
+    
+    
+    Blog *blog1 = [[Blog alloc]init];
+    blog1.Id = 1;
+    blog1.Title = @"文章标题1";
+    blog1.IsRecommend = YES;
+    blog1.user = user1;
+    blog1.lstType = lstType;
+    
+    CLJsonSerializer *serializer = [[CLJsonSerializer alloc]init];
+    NSString *json = [serializer GetJson:blog1];
+    NSLog(@"blog json=%@",json);
+    
+    json = [serializer GetJson:user1];
+    NSLog(@"user json=%@",json);
+    
+    json = [serializer GetJson:lstType];
+    NSLog(@"lstType=%@",json);
+    
+    NSMutableArray *lstBlog = [[NSMutableArray alloc]init];
+    [lstBlog addObject:blog1];
+    [lstBlog addObject:blog1];
+    
+    json = [serializer GetJson:lstBlog];
+    NSLog(@"lstBlog=%@",json);
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+    [dict setObject:blog1 forKey:@"Blog"];
+    [dict setObject:user1 forKey:@"User"];
+    json = [serializer GetJson:dict];
+    NSLog(@"dict=%@",json);
+
 }
 
 - (void)didReceiveMemoryWarning {
