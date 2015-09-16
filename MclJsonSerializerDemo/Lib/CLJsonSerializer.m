@@ -49,7 +49,7 @@ NSString *const OCTypePointer = @"*";
     
     
     NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:JsonObject options:NSJSONWritingPrettyPrinted error:&error];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:JsonObject options:0 error:&error];
     return [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5A88D2D7-E7FC-4B90-AAEA-3C0E67BB1234</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MclJsonSerializerDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4B31CAC80CFBF7A9968C1C8C39236B70EFC88DAB</key>
 		<string>https://github.com/mclkyo/MclJsonSerializer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MclJsonSerializerDemo/MclJsonSerializerDemo.xcodeproj/project.xcworkspace</string>
+	<string>MclJsonSerializerDemo/MclJsonSerializerDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4B31CAC80CFBF7A9968C1C8C39236B70EFC88DAB</key>
