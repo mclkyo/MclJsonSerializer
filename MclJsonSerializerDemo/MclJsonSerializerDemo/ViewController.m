@@ -34,7 +34,7 @@
     User *user1 = [[User alloc]init];
     user1.Id = 1;
     user1.Name = @"mcl";
-    
+    user1.image = [UIImage imageNamed:@"light_wood.jpg"];
     
     Blog *blog1 = [[Blog alloc]init];
     blog1.Id = 1;
@@ -44,10 +44,12 @@
     blog1.lstType = lstType;
     
     CLJsonSerializer *serializer = [[CLJsonSerializer alloc]init];
-    NSString *json = [serializer GetJson:blog1];
-    NSLog(@"blog json=%@",json);
     
-    json = [serializer GetJson:user1];
+    
+    NSString *json = [serializer GetJson:user1];
+    NSLog(@"user json=%@",json);
+    
+    json = [serializer GetJson:blog1];
     NSLog(@"user json=%@",json);
     
     json = [serializer GetJson:lstType];

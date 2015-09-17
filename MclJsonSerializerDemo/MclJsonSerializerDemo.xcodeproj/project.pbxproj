@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0399870C1BAA57640077BDAB /* light_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0399870B1BAA57640077BDAB /* light_wood.jpg */; };
 		03CFDD9A1BA917FC00ED3456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDD991BA917FC00ED3456 /* main.m */; };
 		03CFDD9D1BA917FC00ED3456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDD9C1BA917FC00ED3456 /* AppDelegate.m */; };
 		03CFDDA01BA917FC00ED3456 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDD9F1BA917FC00ED3456 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0399870B1BAA57640077BDAB /* light_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = light_wood.jpg; sourceTree = "<group>"; };
 		03CFDD941BA917FC00ED3456 /* MclJsonSerializerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MclJsonSerializerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CFDD981BA917FC00ED3456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CFDD991BA917FC00ED3456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		03CFDD961BA917FC00ED3456 /* MclJsonSerializerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0399870B1BAA57640077BDAB /* light_wood.jpg */,
 				03CFDDBD1BA9186300ED3456 /* Lib */,
 				03CFDD9B1BA917FC00ED3456 /* AppDelegate.h */,
 				03CFDD9C1BA917FC00ED3456 /* AppDelegate.m */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03CFDDA31BA917FD00ED3456 /* Main.storyboard in Resources */,
+				0399870C1BAA57640077BDAB /* light_wood.jpg in Resources */,
 				03CFDDA81BA917FD00ED3456 /* LaunchScreen.xib in Resources */,
 				03CFDDA51BA917FD00ED3456 /* Images.xcassets in Resources */,
 			);
@@ -436,6 +440,7 @@
 				03CFDDB91BA917FD00ED3456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03CFDDBA1BA917FD00ED3456 /* Build configuration list for PBXNativeTarget "MclJsonSerializerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +449,7 @@
 				03CFDDBC1BA917FD00ED3456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

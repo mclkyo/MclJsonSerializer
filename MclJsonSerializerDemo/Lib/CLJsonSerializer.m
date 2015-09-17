@@ -77,6 +77,11 @@ NSString *const OCTypePointer = @"*";
         if([code hasPrefix:@"@"]){
             code = [code substringFromIndex:2];
             code = [code substringToIndex:code.length - 1];
+            
+            if([code hasPrefix:@"UI"]){
+                continue;
+            }
+            
             if([code compare:@"NSString"]==NSOrderedSame){
                 ValueSet = [[CLStringJsonObjectValueSet alloc]init];
             }

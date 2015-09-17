@@ -12,6 +12,7 @@
 
 @property(nonatomic,assign)int Id;
 @property(nonatomic,retain)NSString *Name;
+@property(nonatomic,strong)UIImage *image;
 
 @end
 
