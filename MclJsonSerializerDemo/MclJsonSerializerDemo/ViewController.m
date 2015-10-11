@@ -42,6 +42,7 @@
     blog1.IsRecommend = YES;
     blog1.user = user1;
     blog1.lstType = lstType;
+    blog1.PostTime = [NSDate date];
     
     CLJsonSerializer *serializer = [[CLJsonSerializer alloc]init];
     

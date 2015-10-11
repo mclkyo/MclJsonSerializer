@@ -86,6 +86,10 @@ NSString *const OCTypePointer = @"*";
                 ValueSet = [[CLStringJsonObjectValueSet alloc]init];
             }
             
+            if([code compare:@"NSDate"] == NSOrderedSame){
+                ValueSet = [[CLNSDateObjectValueSet alloc]init];
+            }
+            
             __weak CLJsonSerializer *my = self;
             if([code compare:@"NSMutableArray"]==NSOrderedSame || [code compare:@"NSArray"]==NSOrderedSame){
                 ValueSet = [[CLArrayJsonObjectValueSet alloc]initWithGetObjectBlock:^NSMutableDictionary *(id setObject) {

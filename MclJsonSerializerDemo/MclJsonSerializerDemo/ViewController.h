@@ -14,6 +14,7 @@
 @property(nonatomic,retain)NSString *Name;
 @property(nonatomic,strong)UIImage *image;
 
+
 @end
 
 @interface Blog : NSObject
@@ -22,6 +23,7 @@
 @property(nonatomic,retain)NSString *Title;
 @property(nonatomic,retain)User *user;
 @property(nonatomic,retain)NSMutableArray *lstType;
+@property(nonatomic,strong)NSDate *PostTime;
 
 @end
 

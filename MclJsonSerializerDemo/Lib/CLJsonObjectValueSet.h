@@ -45,3 +45,8 @@ typedef NSMutableDictionary* (^GetObjectDictBlock)(id setObject);
 @property(nonatomic,copy)GetObjectDictBlock block;
 
 @end
+
+
+@interface CLNSDateObjectValueSet : CLJsonObjectValueSet
+
+@end
