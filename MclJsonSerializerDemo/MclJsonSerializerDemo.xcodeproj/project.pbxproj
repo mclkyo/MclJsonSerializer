@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033418D21BFC577900E06167 /* NSObject+IgnoreProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 033418D11BFC577900E06167 /* NSObject+IgnoreProperty.m */; };
 		0399870C1BAA57640077BDAB /* light_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0399870B1BAA57640077BDAB /* light_wood.jpg */; };
 		03CFDD9A1BA917FC00ED3456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDD991BA917FC00ED3456 /* main.m */; };
 		03CFDD9D1BA917FC00ED3456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CFDD9C1BA917FC00ED3456 /* AppDelegate.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033418D01BFC577900E06167 /* NSObject+IgnoreProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IgnoreProperty.h"; sourceTree = "<group>"; };
+		033418D11BFC577900E06167 /* NSObject+IgnoreProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IgnoreProperty.m"; sourceTree = "<group>"; };
 		0399870B1BAA57640077BDAB /* light_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = light_wood.jpg; sourceTree = "<group>"; };
 		03CFDD941BA917FC00ED3456 /* MclJsonSerializerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MclJsonSerializerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CFDD981BA917FC00ED3456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				03CFDDBF1BA9186300ED3456 /* CLJsonObjectValueSet.m */,
 				03CFDDC01BA9186300ED3456 /* CLJsonSerializer.h */,
 				03CFDDC11BA9186300ED3456 /* CLJsonSerializer.m */,
+				033418D01BFC577900E06167 /* NSObject+IgnoreProperty.h */,
+				033418D11BFC577900E06167 /* NSObject+IgnoreProperty.m */,
 			);
 			path = Lib;
 			sourceTree = SOURCE_ROOT;
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033418D21BFC577900E06167 /* NSObject+IgnoreProperty.m in Sources */,
 				03CFDDA01BA917FC00ED3456 /* ViewController.m in Sources */,
 				03CFDD9D1BA917FC00ED3456 /* AppDelegate.m in Sources */,
 				03CFDDC21BA9186300ED3456 /* CLJsonObjectValueSet.m in Sources */,

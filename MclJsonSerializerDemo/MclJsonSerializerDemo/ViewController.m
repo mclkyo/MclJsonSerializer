@@ -8,12 +8,17 @@
 
 #import "ViewController.h"
 #import "CLJsonSerializer.h"
+#import "NSObject+IgnoreProperty.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation User
+
+-(NSArray*)GetCLJsonIgnoreProperty{
+    return @[@"image",@"Name"];
+}
 
 @end
 
@@ -50,6 +55,8 @@
     NSString *json = [serializer GetJson:user1];
     NSLog(@"user json=%@",json);
     
+    
+    
     json = [serializer GetJson:blog1];
     NSLog(@"user json=%@",json);
     
@@ -59,9 +66,12 @@
     NSMutableArray *lstBlog = [[NSMutableArray alloc]init];
     [lstBlog addObject:blog1];
     [lstBlog addObject:blog1];
-    
     json = [serializer GetJson:lstBlog];
     NSLog(@"lstBlog=%@",json);
+    
+    json = [serializer GetJsonWithIgnoreProerty:lstBlog IgnoreProperty:@[@"user"]];
+    NSLog(@"lstBlog=%@",json);
+    
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
     [dict setObject:blog1 forKey:@"Blog"];

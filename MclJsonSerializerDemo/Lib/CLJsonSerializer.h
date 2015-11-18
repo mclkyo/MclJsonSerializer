@@ -11,5 +11,6 @@
 @interface CLJsonSerializer : NSObject
 
 -(NSString*)GetJson:(id)theObject;
+-(NSString*)GetJsonWithIgnoreProerty:(id)theObject IgnoreProperty:(NSArray*)ignoreProperty;
 
 @end
