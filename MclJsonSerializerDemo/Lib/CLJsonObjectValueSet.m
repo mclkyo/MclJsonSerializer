@@ -103,7 +103,7 @@
 -(void)AddValue:(NSMutableDictionary *)dict PropertyName:(NSString *)PropertyName PropertyValue:(NSString *)PropertyValue{
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     id value = [[NSString alloc]initWithFormat:@"%@",[formatter stringFromDate:(NSDate*)PropertyValue]];
     
     [dict setObject:value forKey:PropertyName];
