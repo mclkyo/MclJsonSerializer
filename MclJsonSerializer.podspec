@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "MclJsonSerializer" 
-  s.version          = "1.0.5"  
+  s.version          = "1.0.6"  
   s.summary          = "Parse Object 2 Json String."  
   s.description  = <<-DESC
 		Parse Object 2 Json String.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/mclkyo/MclJsonSerializer"  
   s.license          = "MIT"  
   s.author           = { "mclkyo" => "mclkyo@gmail.com" }  
-  s.source           = { :git => "https://github.com/mclkyo/MclJsonSerializer.git", :tag => "1.0.5"}  
+  s.source           = { :git => "https://github.com/mclkyo/MclJsonSerializer.git", :tag => "1.0.6"}  
   s.platform     = :ios, "7.0"  
   s.requires_arc = true  
   s.source_files = "MclJsonSerializerDemo/Lib/**/*.{h,m}"

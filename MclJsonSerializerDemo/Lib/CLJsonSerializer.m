@@ -184,9 +184,10 @@ NSString *const OCTypePointer = @"*";
         
         [ValueSet AddValue:jsonDict PropertyName:propertyName PropertyValue:value];
         
-        
-        
     }
+    
+    free(ivars);
+    
     return jsonDict;
 }
 
