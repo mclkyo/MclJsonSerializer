@@ -126,6 +126,11 @@ NSString *const OCTypePointer = @"*";
     
     unsigned int outCount;
     
+    if([theObject isKindOfClass:[NSString class]]){
+        return theObject;
+    }
+    
+    
     Ivar *ivars = class_copyIvarList([theObject class], &outCount);
     for (int i = 0; i<outCount; i++) {
         Ivar ivar = ivars[i];

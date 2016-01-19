@@ -32,6 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    
+    
+    
+    
     NSMutableArray *lstType = [[NSMutableArray alloc]init];
     [lstType addObject:@"科技"];
     [lstType addObject:@"IT"];
@@ -50,6 +55,11 @@
     blog1.PostTime = [NSDate date];
     
     CLJsonSerializer *serializer = [[CLJsonSerializer alloc]init];
+    
+    NSDictionary *Mydict = @{@"Key":@"Value123"};
+    NSString *dictJson = [serializer GetJson:Mydict];
+    NSLog(@"dict json=%@",dictJson);
+    
     
     
     NSString *json = [serializer GetJson:user1];
